@@ -2,9 +2,172 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Wireframe Domi</title>
+
+	<style type="text/css">
+
+		* {
+			margin: 0px auto;
+		}
+		
+		#header {
+			width: 100%;
+			height: 300px;
+			background-image: url("banner.jpg");
+		}
+
+		.right {
+			text-align: right;
+		}
+		
+		.left {
+			float: left;
+		}
+
+		main {
+			padding: 10px 50px;
+		}
+
+		nav {
+			padding: 10px 5px;
+			text-align: center;
+			background: #efefef;
+			opacity: 0.5;
+			position: fixed;
+			width: 100%;
+		}
+		
+		li {
+			display: inline;
+			margin-left: 50px;
+		}
+
+		li a{
+			text-decoration: none;
+			color: #000;
+			font-family: "Helvetica";
+			font-size: 18px;
+		}
+
+		li a:hover {
+			color: red;
+			border-bottom: 1px solid red;
+		}
+
+		table {
+			border: 1px solid black;
+		}
+
+		body {
+			background: #ccc;
+		}
+
+		#skills {
+			padding-top: 80px;
+		}
+
+	</style>
 </head>
 <body>
-	
+	<!-- /header -->
+	<header id="header">
+			
+		<nav>
+			<ul>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<div id="about">
+			<h1>About</h1>
+			<img src="pic2.png" alt="avatar" class="left" width="160px" height="120px">
+			<p class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+
+		<div id="skills">
+			<h1>Skills</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Skills</th>
+						<th>Level</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>HTML</td>
+						<td>very good</td>
+					</tr>
+					<tr>
+						<td>CSS</td>
+						<td>very good</td>
+					</tr>
+					<tr>
+						<td>JS</td>
+						<td>dont ask :D</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="portfolio">
+			<h1>Portfolio</h1>
+			<a href="#">
+				<img src="pic3.jpg" alt="pic3" width="150px" height="150px">
+			</a>
+			<a href="#">
+				<img src="pic4.jpg" alt="pic4" width="150px" height="150px">
+			</a>
+			<a href="#">
+				<img src="pic5.jpg" alt="pic5" width="150px" height="150px">
+			</a>	
+		</div>
+
+		<div id="contact">
+			<h1>Contact</h1>
+			<address>
+				<p>E-Mail: Example@test.at</p>
+				<p>Tel: 0680/###########</p>
+			</address>
+
+			<form action="wireframe-domi_submit" method="post">
+				<label>
+					firstname:
+					<input type="text" name="firstname" value="pls enter firstname" disabled>
+				</label>
+
+					<br>
+
+				<label>
+					lastname:
+					<input type="text" name="lastname" value="pls enter lastname" required>
+				</label>
+
+					<br>
+					
+				<label>
+					E-Mail:
+					<input type="email" name="email" value="pls enter email address">
+				</label>
+
+					<br>
+					
+				<button type="submit">submit</button>
+			</form>
+		</div>
+	</main>
 </body>
 </html>
